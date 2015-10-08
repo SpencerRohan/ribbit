@@ -9,6 +9,10 @@ class Consumer_Rating
     @propensity = calculate_propensity(request['propensity'])
   end
 
+  def display
+    print "Ranking: #{@ranking}, Propensity: #{@propensity}"
+  end
+
   private
 
   def calculate_propensity(numerical_score)

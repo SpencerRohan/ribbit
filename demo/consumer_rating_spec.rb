@@ -22,8 +22,9 @@ describe Consumer_Rating do
   end
 
   describe "#display" do
-    it "Prints consumer's ranting values to standard out"
-
+    it "Prints consumer's ranting values to standard out" do
+      expect{ rater.display }.to output("Ranking: C, Propensity: 2.26532").to_stdout
+    end
   end
 
 end
