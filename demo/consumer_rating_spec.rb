@@ -1,8 +1,8 @@
 require_relative "consumer_rating_demo.rb"
 require 'webmock/rspec'
 
-describe Consumer_Rating do
-  let(:rater) { Consumer_Rating.new( income:  50000,
+describe ConsumerRating do
+  let(:rater) { ConsumerRating.new( income:  50000,
                                      zipcode: 60201,
                                      age:     35 )}
   before(:each) do
