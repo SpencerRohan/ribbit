@@ -7,7 +7,7 @@ describe Ribbit do
 
   describe "#initialize" do
     it "takes a hash argument and returns a Ribbit object" do
-      @ribbit.to be_a(Ribbit)
+      expect(@ribbit).to be_a(Ribbit)
     end
   end
 
