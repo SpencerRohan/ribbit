@@ -3,17 +3,17 @@
 Ribbit is a library providing scoring advice about consumers based on their income, zipcode, and age. This is an API Integration exercise for LeapFrog Online.
 
 ### Guide to Install Gem
-1. Clone this repository
-2. In termial navigate to the imported repo
-3. Using the gemspec build the ribbit gem - type:
++ Clone this repository
++ In termial navigate to the imported repo
++ Using the gemspec build the ribbit gem - type:
 ```
     gem build ribbit.gemspec
 ```
-4. Upon success you may install the gem - type:
++ Upon success you may install the gem - type:
 ```
     gem install ./ribbit-0.0.0.gem
 ```
-5. Included in this library are testing suites for the ribbit library as well as a demo program implementation. To run specs for both navigate to the spec file of your choosing and - type:
++ Included in this library are testing suites for the ribbit library as well as a demo program implementation. To run specs for both navigate to the spec file of your choosing and - type:
 ```
     rspec INSERT FILENAME HERE
 ```
