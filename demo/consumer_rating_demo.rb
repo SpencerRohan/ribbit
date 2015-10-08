@@ -1,6 +1,6 @@
 require 'ribbit'
 
-class Consumer_Rating
+class ConsumerRating
   attr_reader :ranking, :propensity
 
   def initialize(consumer_data)

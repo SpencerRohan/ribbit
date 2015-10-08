@@ -1,10 +1,44 @@
-# ribbit
-Ruby gem providing scoring advice about consumers based on their income, zipcode, and age. API INTEGRATION EXERCISE
+# Ribbit
+### Summary
+Ribbit is a library providing scoring advice about consumers based on their income, zipcode, and age. This is an API Integration exercise for LeapFrog Online.
 
-##NOTES
-#Research
--Making a ruby gem
--webfaker vs fakeweb
+### Guide to Install Gem
+1. Clone this repository
+2. In termial navigate to the imported repo
+3. Using the gemspec build the ribbit gem - type:
+```
+    gem build ribbit.gemspec
+```
+4. Upon success you may install the gem - type:
+```
+    gem install ./ribbit-0.0.0.gem
+```
+5. Included in this library are testing suites for the ribbit library as well as a demo program implementation. To run specs for both navigate to the spec file of your choosing and - type:
+```
+    rspec INSERT FILENAME HERE
+```
 
-#Challenges
--
+*Note: This library includes a fictional HTTP destination - for implementing in actual development scenarios you must change the destination source in the ribbit.rb file*
+
+### Other Gems Required for Functionality
+Before installing ensure you have the following gems installed locally. See Ruby-Toolbox.com for more instructions.
+ + WebMock ('webmock/rspec')
+ + Net/Http ('net/http')
+ + Json ('json')
+
+### Guide to use Demo Program
+
+Also included in this repository is a program to calculate and view  consumer ratings easily with the Ribbit gem.
+
+*Note: income, zipcode, and age values must be present, fixnums, in hash format to be valid.*
+
+```ruby
+require 'ribbit'
+rating_data = ConsumerRating.new( income:  50000,
+                                  zipcode: 60201,
+                                  age:     35 )
+
+rating_data.ranking #=> 'C'
+rating_data.propensity #=> 2.26532
+rating_data.display # will display the following in stdout: "Ranking: C, Propensity: 2.26532"
+```
