@@ -4,7 +4,7 @@ Ruby gem providing scoring advice about consumers based on their income, zipcode
 ##NOTES
 #Research
 -Making a ruby gem
--
+-webfaker vs fakeweb
 
 #Challenges
 -
