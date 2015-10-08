@@ -9,6 +9,18 @@ describe Ribbit do
     it "takes a hash argument and returns a Ribbit object" do
       expect(@ribbit).to be_a(Ribbit)
     end
+
+    it "Makes income a readable value" do
+      expect(@ribbit.income).to eq(50000)
+    end
+
+    it "Makes zipcode a readable value" do
+      expect(@ribbit.zipcode).to eq(60201)
+    end
+
+    it "Makes age a readable value" do
+      expect(@ribbit.age).to eq(35)
+    end
   end
 
 end
